@@ -10,25 +10,27 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+    />
   </head>
   <body>
     <div class="country-search__wrapper">
       <input
         class="country-search__text"
-        type="input"
+        type="text"
         name="country"
         id="country-search"
         aria-label="Поиск страны"
       />
-      <label for="country-search"
-        ><button class="btn country-search__btn">Поиск страны</button></label
-      >
     </div>
 
     <!-- В этот блок будет ренерится страна -->
-    <div class="countries js-countries"></div>
+    <div class="js-countries"></div>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+    <script src="./js/countrySearch.js"></script>
   </body>
 </html>
