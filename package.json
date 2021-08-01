@@ -1,0 +1,27 @@
+{
+  "name": "goit-js-hw-12-countries",
+  "version": "1.1.0",
+  "description": "JavaScript. Домашняя работа №12 в GoIT",
+  "main": "index.js",
+  "homepage": "https://pavlooliinyk.github.io/goit-js-hw-12-countries",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PavloOliinyk/goit-js-hw-12-countries.git"
+  },
+  "keywords": [],
+  "author": "Pavlo Oliinyk <oliinyk.pavlo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PavloOliinyk/goit-js-hw-12-countries/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "sass": "^1.32.8"
+  }
+}
