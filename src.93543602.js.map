@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/fetchCountries.js","index.js"],"names":["console","log"],"mappings":";;;AAAAA,QAAQC,IAAI;;ACCZ,aADA,QAAA,oBACA,QAAA","file":"src.93543602.js","sourceRoot":"../src","sourcesContent":["console.log('`yello ');\n","import './sass/main.scss';\nimport './js/fetchCountries';\n"]}
