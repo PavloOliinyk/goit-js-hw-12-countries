@@ -32,6 +32,11 @@ h1 {
 
   &__list {
     list-style-type: disc;
+
+    & .card__item {
+      padding-top: 10px;
+      padding-bottom: 0;
+    }
   }
 
   &__title {

@@ -1,21 +1,33 @@
-// import countryCardTemplate from '../templates/country-card.hbs';
-// import countriesListTemplate from '../templates/countries-list.hbs';
-// import { noticeError, noticeProgress, noticeSuccess } from './notifications';
+import countryCardTemplate from '../templates/country-card.hbs';
+import countriesListTemplate from '../templates/countries-list.hbs';
+import { noticeError, noticeProgress, noticeSuccess } from './notifications';
+import getRefs from './refs';
+const { countryContainer } = getRefs();
 
-// export default function renderCountryCard(country) {
-//   if (country.length > 10) {
-//     noticeError();
-//     return;
-//   }
+function renderMarkup(countries) {
+  if (countries.length > 10) {
+    noticeError();
+    return;
+  }
 
-//   if (country.length >= 2 && country.length <= 10) {
-//     const countriesList = countriesListTemplate(country);
-//     countryContainer.insertAdjacentHTML('beforeend', countriesList);
-//     noticeProgress();
-//     return;
-//   }
+  if (countries.length >= 2 && countries.length <= 10) {
+    renderCountriesList(countries);
+    noticeProgress();
+    return;
+  }
 
-//   const countryCardMarkUp = countryCardTemplate(country);
-//   countryContainer.insertAdjacentHTML('beforeend', countryCardMarkUp);
-//   noticeSuccess();
-// }
+  renderCountryCard(countries);
+  noticeSuccess();
+}
+
+function renderCountryCard(countries) {
+  const countryCardMarkUp = countryCardTemplate(countries);
+  countryContainer.insertAdjacentHTML('beforeend', countryCardMarkUp);
+}
+
+function renderCountriesList(countries) {
+  const countriesList = countriesListTemplate(countries);
+  countryContainer.insertAdjacentHTML('beforeend', countriesList);
+}
+
+export default renderMarkup;

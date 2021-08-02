@@ -1,9 +1,9 @@
 import { success, notice, error, info, defaults } from '@pnotify/core';
 
-function noticeNull() {
+function noticeIncorrect() {
   notice({
     title: 'Warning',
-    text: 'Please, type country to show',
+    text: 'Enter correct value',
   });
 }
 
@@ -32,4 +32,4 @@ function setDefaultsDelay(delay) {
   defaults.delay = delay;
 }
 
-export { noticeError, noticeNull, noticeProgress, noticeSuccess, setDefaultsDelay };
+export { noticeError, noticeIncorrect, noticeProgress, noticeSuccess, setDefaultsDelay };
