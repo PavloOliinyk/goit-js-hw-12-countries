@@ -2,7 +2,7 @@
 <h1 class="card__title">{{name}}</h1>
 
 <div class="card__wrapper">
-  <ul class="card__list">
+  <ul>
     <li class="list card__item">
       <span class="card__text">Capital:</span>  {{capital}}
     </li>
@@ -11,7 +11,7 @@
     </li>
     <li class="list card__item">
       <span class="card__text">Languages:</span>
-        <ul>
+        <ul class="card__list">
         {{#each languages}}
           <li class="card__item">{{this.name}}</li>
         </ul>

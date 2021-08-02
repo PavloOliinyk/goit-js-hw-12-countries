@@ -1,5 +1,6 @@
 body {
   background-color: aliceblue;
+
   font-size: 26px;
 }
 
@@ -27,6 +28,10 @@ h1 {
   &__wrapper {
     display: flex;
     justify-content: center;
+  }
+
+  &__list {
+    list-style-type: disc;
   }
 
   &__title {
